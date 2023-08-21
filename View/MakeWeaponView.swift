@@ -45,7 +45,6 @@ struct MakeWeapon: View {
                         )
                 }
             }
-            
             NavigationLink(
                 destination: ContentView(),
                 isActive: $letsFight,
