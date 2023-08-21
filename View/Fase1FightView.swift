@@ -26,8 +26,7 @@ struct ContentView: View {
                     .frame(width: viewModel.healthPoints, height: 50)
                     .foregroundColor(.red)
                     .offset(x:30, y:30)
-            }
-            
+            }            
             VStack{
                 ZStack{
                     Image("Fighter1")
@@ -38,7 +37,6 @@ struct ContentView: View {
                         .offset(viewModel.fighter2Offset)
                         .position(x: geometry.size.width/1.3, y: geometry.size.height/2)
                 }
-                
                 Spacer()
                 Button("-- LET'S FIGHT --") {
                     viewModel.startFight()

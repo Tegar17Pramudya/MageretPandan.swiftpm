@@ -25,7 +25,6 @@ struct Fase2Fight: View {
                     .foregroundColor(.red)
                     .offset(x:30, y:30)
             }
-            
             VStack{
                 ZStack{
                     Image("Fighter1Final")
