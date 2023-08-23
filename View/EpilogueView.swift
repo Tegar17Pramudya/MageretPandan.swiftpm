@@ -34,8 +34,6 @@ struct EpilogueView: View {
                             .font(.system(size: 18))
                             .frame(width: geometry.size.width * 1/3)
                             .position(x:geometry.size.width/2, y:geometry.size.height/2+120)
-                        
-                        
                     }
                     
                     VStack{

@@ -35,6 +35,7 @@ struct Home: View {
     
 }
 
+//ini logic masuk ke viewmodel
 @available(iOS 16.0, *)
 func backgroundAudio(){
     guard let path = Bundle.main.path(forResource: "SoundBali", ofType: "mp3")

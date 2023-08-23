@@ -18,16 +18,14 @@ class HealingViewModel: ObservableObject {
         medicine.scale = 0.7
         model.medicines[medicineNum] = medicine
         
-        model.medicines[medicineNum].isPlaced = onBasket(position: [medicine.x, medicine.y])
+        model.medicines[medicineNum].isPlaced = onBasket(xOver: abs(700 - medicine.x),  yOver: abs(500 - medicine.y))
         
         if model.medicines.filter({ $0.isPlaced }).count == 4 {
             model.epilogue = true
         }
     }
     
-    func onBasket(position: [CGFloat]) -> Bool {
-        let xOver = abs(700 - position[0])
-        let yOver = abs(500 - position[1])
+    func onBasket(xOver: CGFloat, yOver: CGFloat) -> Bool {
         return (xOver < 220 && yOver < 260)
     }
 }

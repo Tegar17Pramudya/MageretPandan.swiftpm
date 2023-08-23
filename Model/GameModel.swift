@@ -1,12 +1,14 @@
 import CoreFoundation
 
+//modelnya dipisah saja biar mudah dicari, jangan digabungkan seperti dibawah
+
 //Fight Fase 1
-struct FighterModel {
+struct FighterModel { //penamaan tidak usah ditambah model
     var healthPoints: CGFloat
 }
 
 //Fight Fase 2
-struct Fase2FightModel {
+struct Fase2FightModel { //cukup pake 1 saja jika fungsinya sama
     var healthPoints: CGFloat
 }
 
