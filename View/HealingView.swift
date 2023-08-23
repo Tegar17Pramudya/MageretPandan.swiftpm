@@ -84,9 +84,4 @@ struct HealingView: View {
                 }
             })
     }
-
-    //masuk ke view model karena termasuk logic
-    func medicineCounter(_ arr: [Bool]) -> Int {
-        return arr.reduce(0) { $1 ? $0 + 1 : $0 }
-    }
 }

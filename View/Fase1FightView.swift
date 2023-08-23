@@ -5,9 +5,6 @@ import SwiftUI
 @available(iOS 16.0, *)
 struct Fase1FightView: View {
     @StateObject private var viewModel = Fase1FightViewModel()
-    @State private var healthPoints: CGFloat = 1200
-    @State private var imageOffset = CGSize.zero
-    @State private var imageOffset2 = CGSize.zero
     
     var body: some View {
         GeometryReader { geometry in
