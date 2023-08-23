@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-struct Healing: View {
+struct HealingView: View {
     @StateObject private var viewModel = HealingViewModel()
 
     var body: some View {

@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-struct Fase2Fight: View {
+struct Fase2FightView: View {
     @StateObject private var viewModel = Fase2FightViewModel()
     
     var body: some View {
@@ -57,7 +57,7 @@ struct Fase2Fight: View {
                 .font(.headline)
                 .scaleEffect(2.0)
                 
-                NavigationLink(destination: Healing(), isActive: $viewModel.isOver) {
+                NavigationLink(destination: HealingView(), isActive: $viewModel.isOver) {
                     //EmptyView()
                 }
             }

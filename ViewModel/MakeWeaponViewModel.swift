@@ -1,7 +1,7 @@
 import SwiftUI
 
 class MakeWeaponViewModel: ObservableObject {
-    @Published var model = MakeWeaponModel()
+    @Published var model = MakeWeapon()
 
     func onPandanDrop(pandanNum: Int, position: CGPoint) {
         var pandan = model.pandans[pandanNum]

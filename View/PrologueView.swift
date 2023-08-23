@@ -107,7 +107,7 @@ struct PrologueView: View {
                                 }
                                 .frame(width: gr.size.width * 0.3, height: gr.size.height * 0.5, alignment: .top)
                             }
-                            NavigationLink(destination: MakeWeapon(), label: {
+                            NavigationLink(destination: MakeWeaponView(), label: {
                                 Rectangle()
                                     .fill(Color("BgRectangle"))
                                     .shadow(radius: 8, y: 8)

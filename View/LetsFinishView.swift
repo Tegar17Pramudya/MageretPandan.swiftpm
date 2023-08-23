@@ -38,7 +38,7 @@ struct LetsFinish: View {
                     }
                     
                     VStack{
-                        NavigationLink(destination: Fase2Fight(), label: {
+                        NavigationLink(destination: Fase2FightView(), label: {
                             Circle()
                                 .fill(Color("BgRectangle"))
                                 .shadow(radius: 8, y: 8)

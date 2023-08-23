@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-struct MakeWeapon: View {
+struct MakeWeaponView: View {
     @StateObject private var viewModel = MakeWeaponViewModel()
     @State private var letsFight = false
     
@@ -46,7 +46,7 @@ struct MakeWeapon: View {
                 }
             }
             NavigationLink(
-                destination: ContentView(),
+                destination: Fase1FightView(),
                 isActive: $letsFight,
                 label: { EmptyView() }
             )

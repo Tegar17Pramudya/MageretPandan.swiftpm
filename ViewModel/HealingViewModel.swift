@@ -1,7 +1,7 @@
 import SwiftUI
 
 class HealingViewModel: ObservableObject {
-    @Published var model = HealingModel()
+    @Published var model = Healing()
 
     func onMedicineDrop(medicineNum: Int, position: CGPoint) {
         var medicine = model.medicines[medicineNum]
