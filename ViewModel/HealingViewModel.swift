@@ -24,11 +24,9 @@ class HealingViewModel: ObservableObject {
             model.epilogue = true
         }
     }
-    
     func onBasket(xOver: CGFloat, yOver: CGFloat) -> Bool {
         return (xOver < 220 && yOver < 260)
     }
-    
     func medicineCounter(_ arr: [Bool]) -> Int {
         return arr.reduce(0) { $1 ? $0 + 1 : $0 }
     }

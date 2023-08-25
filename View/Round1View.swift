@@ -3,8 +3,8 @@ import SwiftUI
 //kalau bisa gunakan 1 view saja untuk fase 1 sama fase 2, karena kurang lebih komposisinya sama, hanya beda di aset yang ditampilkan
 //agar redudansi dikurangi, dan cleancodenya bisa ditingkatkan.
 @available(iOS 16.0, *)
-struct Fase1FightView: View {
-    @StateObject private var viewModel = Fase1FightViewModel()
+struct Round1View: View {
+    @StateObject private var viewModel = Round1ViewModel()
     
     var body: some View {
         GeometryReader { geometry in

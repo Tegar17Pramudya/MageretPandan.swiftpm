@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-class Fase2FightViewModel: ObservableObject {
+class Round2ViewModel: ObservableObject {
     @Published var isOver = false
     @Published var fighter1Offset = CGSize.zero
     @Published var fighter2Offset = CGSize.zero

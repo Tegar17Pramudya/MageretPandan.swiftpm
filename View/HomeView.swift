@@ -22,13 +22,11 @@ struct Home: View {
                                 .cornerRadius(.infinity)
                                 .scaleEffect(1.5)
                         }
-                        
                     }
                 }
             }.navigationBarHidden(true)
         }.navigationBarBackButtonHidden(true)
     }
-    
 }
 
 //Bridge Bettwen Swiftui & uiKit

@@ -5,7 +5,7 @@ import AVFoundation
 var audioPlayer : AVAudioPlayer?
 
 @available(iOS 16.0, *)
-class Fase1FightViewModel: ObservableObject {
+class Round1ViewModel: ObservableObject {
     @Published var isFase2 = false
     @Published var fighter1Offset = CGSize.zero
     @Published var fighter2Offset = CGSize.zero
@@ -21,7 +21,6 @@ class Fase1FightViewModel: ObservableObject {
                 isFase2 = true
             }
         }
-        
         Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false) { _ in
             withAnimation(.linear(duration: 0.1)) {
                 self.fighter1Offset = CGSize.zero
@@ -31,7 +30,6 @@ class Fase1FightViewModel: ObservableObject {
     }
 }
 
-//ini logic masuk ke viewmodel
 @available(iOS 16.0, *)
 func backgroundAudio(){
     guard let path = Bundle.main.path(forResource: "SoundBali", ofType: "mp3")

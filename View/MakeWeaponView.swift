@@ -46,7 +46,7 @@ struct MakeWeaponView: View {
                 }
             }
             NavigationLink(
-                destination: Fase1FightView(),
+                destination: Round1View(),
                 isActive: $letsFight,
                 label: { EmptyView() }
             )

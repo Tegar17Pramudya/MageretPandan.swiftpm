@@ -42,7 +42,6 @@ struct HealingView: View {
             )
         )
     }
-
     func dragGesture(medicineNum: Int) -> some Gesture {
         return DragGesture()
             .onChanged(

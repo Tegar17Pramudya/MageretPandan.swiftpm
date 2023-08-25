@@ -35,7 +35,6 @@ struct EpilogueView: View {
                             .frame(width: geometry.size.width * 1/3)
                             .position(x:geometry.size.width/2, y:geometry.size.height/2+120)
                     }
-                    
                     VStack{
                         NavigationLink(destination: Home(), label: {
                             Circle()
@@ -51,7 +50,6 @@ struct EpilogueView: View {
                                 .padding(.trailing, 100)
                                 .position(x:geometry.size.width/2+40, y:geometry.size.height/2+350)
                         })
-                        
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

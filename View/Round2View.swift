@@ -1,8 +1,8 @@
 import SwiftUI
 
 @available(iOS 16.0, *)
-struct Fase2FightView: View {
-    @StateObject private var viewModel = Fase2FightViewModel()
+struct Round2View: View {
+    @StateObject private var viewModel = Round2ViewModel()
     
     var body: some View {
         GeometryReader { geometry in
@@ -11,7 +11,6 @@ struct Fase2FightView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .ignoresSafeArea(.all)
-            
             ZStack(alignment: .leading) {
                 Spacer()
                 Rectangle()
@@ -43,9 +42,7 @@ struct Fase2FightView: View {
                             .scaleEffect(1)
                             .position(x:geometry.size.width/2+50, y:geometry.size.height/3-70)
                     }
-                    
                 }
-                
                 Button("-- LET'S FIGHT --") {
                     viewModel.startFight()
                 }

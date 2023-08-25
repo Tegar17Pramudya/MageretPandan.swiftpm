@@ -35,10 +35,9 @@ struct LetsFinish: View {
                             .font(.system(size: 20))
                             .frame(width: geometry.size.width * 1/3)
                             .position(x:geometry.size.width/2, y:geometry.size.height/2+50)
-                    }
-                    
+                    }                    
                     VStack{
-                        NavigationLink(destination: Fase2FightView(), label: {
+                        NavigationLink(destination: Round2View(), label: {
                             Circle()
                                 .fill(Color("BgRectangle"))
                                 .shadow(radius: 8, y: 8)
